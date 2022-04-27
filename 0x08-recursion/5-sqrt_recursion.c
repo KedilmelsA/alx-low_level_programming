@@ -1,4 +1,3 @@
-Wonde, [4/27/2022 6:10 PM]
 #include "main.h"
 
 /
@@ -27,18 +26,4 @@ int sqrt2(int a, int b)
 int _sqrt_recursion(int n)
 {
   return (sqrt2(n, 1));
-}
-
-Wonde, [4/27/2022 6:11 PM]
-#include <stdio.h>
-#include "main.h"
-/**
- * wildcmp - Entry Point
- * @s1: input
- * @s2: input
- * Return: 0
- */
-int wildcmp(char *s1, char *s2)
-{
-  return (0);
 }
