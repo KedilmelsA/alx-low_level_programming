@@ -1,18 +1,24 @@
-#include <stdio.h>
-#include "dog.h"
+ifndef STRTYP
+#define STRTYP
 
 /**
- * main - check the code for Holberton School students.
- *
- * Return: Always 0.
- */
-int main(void)
+  *struct dog - structure of a dog.
+  *@name: name of dog.
+  *@age: age of dog.
+  *@owner: owner of dog.
+  */
+struct dog
 {
-    struct dog my_dog;
+	char *name;
+	float age;
+	char *owner;
+};
 
-    my_dog.name = "Django";
-    my_dog.age = 3.5;
-    my_dog.owner = "Jay";
-    printf("My name is %s, and I am %.1f :) - Woof!\n", my_dog.name, my_dog.age);
-    return (0);
-}
+typedef struct dog dog_t;
+
+void init_dog(struct dog *d, char *name, float age, char *owner);
+void print_dog(struct dog *d);
+dog_t *new_dog(char *name, float age, char *owner);
+void free_dog(dog_t *d);
+
+#endif /*STRTYP*/
